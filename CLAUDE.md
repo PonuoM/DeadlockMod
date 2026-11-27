@@ -32,7 +32,9 @@
 - สำเนา config ที่ใช้อยู่ + วิธีลง + รายการที่ปรับ: [config/](config/) (`gameinfo.gi`, `README.md`) — ใช้ลงเครื่องที่บ้านด้วย
 - เกมเปิดอยู่จะล็อกทั้ง `gameinfo.gi` และ vpk ใน addons → ต้องให้ผู้ใช้ออกเกมก่อนแก้
 - เกม ClientVersion 6868 (game/citadel/steam.inf) · ผู้ใช้ตั้งเกมเป็นภาษาไทย → หน้า Builds ในเกมโชว์แต่ build ภาษาไทย (คุณภาพต่ำ)
-- วิเคราะห์ 2026-11-26 (ยังไม่ได้ลง):
+- 2026-11-27: เกมอัปเดตเป็น ClientVersion 6871 (config ยังอยู่ครบ) · **ลง Builds+ แล้ว** เป็น `addons/pak02_dir.vpk` (เว้น pak01 ไว้ให้ม็อดตัวเอง)
+- 2026-11-27: ฮีโร่หายในหน้าโหลด/MVP → สาเหตุ `citadel_portrait_world_renderer_off "true"` ใน config → ปิดบรรทัดนี้แล้ว (สำรอง `gameinfo.gi.bak_before_portrait`) · ถ้าฮีโร่ในหน้าพวกนี้ดูมืด แก้ `lb_enable_dynamic_lights` เป็น true (แต่เปิดไฟ dynamic ทั้งเกม กิน FPS)
+- วิเคราะห์ 2026-11-26:
   - **Builds+** (gamebanana 736782, `BuildsPlus_dir.vpk`): แก้ `citadel_popup_build_browser` + JS, จัด build ทั่วโลกตามจำนวนแมตช์จริง/แรงค์ Eternus, มีข้อมูลฝังมา (19 พ.ย.) + ดึงสดผ่าน HTML panel ไป pawnxx.github.io และเซิร์ฟเวอร์ IP 179.253.78.167 (sslip.io) ส่ง hero id/sort/lang
   - **Item Assistant** (694954, `pak05_dir.vpk`): override `hud_health` layout + JS recommender, ไม่มี network; ข้อมูลจาก client 6635 (เก่า) ขาดฮีโร่ id 84–88; อ่านชื่อไอเทม/ฮีโร่จากข้อความบนจอเป็นภาษาอังกฤษ → น่าจะใช้กับเกมภาษาไทยไม่ได้; license CC BY-NC-ND (แก้ใช้เองได้ เผยแพร่ต้องขอ)
   - สองม็อดไม่มีไฟล์ซ้ำกัน

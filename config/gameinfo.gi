@@ -796,7 +796,7 @@ GameInfo
         citadel_in_world_item_panel_dpi               "0"       // default: "2"     | This controls the quality of the text above soul pickups, so boxes, golden statues, and soul orbs. Higher values mean better quality, lower means worse.
         citadel_per_weapon_per_surface_impact_effects "false"   // default: "true"  | Reduces the visuals for bullet tracers. This will disable the radius of yamato right click.
         citadel_player_model_force_highest_lod        "false"   // default: "true"  | Courtesy of dohn valve too, allows the player model to render lowest LoD from your sc_screensize_lod_scale_override setting if you so choose
-        citadel_portrait_world_renderer_off           "true"   // default: "false" | Disables character models in shop and endgame screen
+        // [disabled: hero portraits missing] citadel_portrait_world_renderer_off           "true"   // default: "false" | Disables character models in shop and endgame screen
         citadel_trooper_glow_disabled                 "1"       // default: "0"     | 1 = Disable friendly/enemy minion glow.
         cl_phys_enabled                               "false"   // default: "true"  | Disables all physics. This means ragdolls just maintain the last pose and boxes don't fall over
         lb_enable_dynamic_lights                      "false"   // default: "1"     | SET THIS TO TRUE TO MAKE HERO PORTRAITS HAVE COLOR IN THE SHOP AND ENDGAME *Disables dynamic lights eg. walker, shop, tp, character abilities etc. (hero silhouettes go dark in menus as a side effect)

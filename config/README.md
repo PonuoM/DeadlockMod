@@ -30,4 +30,5 @@
 | `r_texture_lod_scale` | 8 | 1 | texture คมขึ้น |
 | `r_texturefilteringquality` | 0 | 3 | Aniso 4x |
 | `r_texture_pool_size` | 256 | ปิด (//) | ให้เกมกำหนดเอง |
+| `citadel_portrait_world_renderer_off` | true | ปิด (//) | ไม่งั้นโมเดลฮีโร่หายในหน้าโหลด/จบเกม MVP/ร้านค้า |
 | `r_texture_stream_resolution_bias` | 0.01 | ปิด (//) | ให้เกมกำหนดเอง |
